@@ -21,33 +21,33 @@
         name = "cuda-env-shell";
 
         nativeBuildInputs = with pkgs; [
-          git
-          gcc12
-          gitRepo
-          gnupg
           autoconf
-          curl
-          procps
-          gnumake
-          util-linux
-          m4
-          gperf
-          unzip
+          binutils
           cudaPackages.cudatoolkit
-          linuxPackages.nvidia_x11
-          libGLU
+          curl
+          freeglut
+          gcc12
+          git
+          gitRepo
+          gnumake
+          gnupg
+          gperf
           libGL
+          libGLU
+          linuxPackages.nvidia_x11
+          m4
+          ncurses5
+          procps
+          stdenv.cc
+          unzip
+          util-linux
+          xorg.libX11
+          xorg.libXext
           xorg.libXi
           xorg.libXmu
-          freeglut
-          xorg.libXext
-          xorg.libX11
-          xorg.libXv
           xorg.libXrandr
+          xorg.libXv
           zlib
-          ncurses5
-          stdenv.cc
-          binutils
         ];
 
         shellHook = ''

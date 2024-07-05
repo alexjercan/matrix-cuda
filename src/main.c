@@ -23,12 +23,16 @@ int main() {
         printf("\n");
     }
 
+    printf("X\n");
+
     for (int i = 0; i < p; i++) {
         for (int j = 0; j < m; j++) {
             printf("%f ", matrix_at(&m2, i, j));
         }
         printf("\n");
     }
+
+    printf("=\n");
 
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
